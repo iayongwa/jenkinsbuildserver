@@ -50,8 +50,8 @@ resource "azurerm_virtual_machine" "jenkinsServerVM" {
   os_profile_linux_config {
     disable_password_authentication = true
     ssh_keys {
-      path     = "/home/azureuser/.ssh/authorized_keys"
-      key_data = file("~/.ssh/azure.pub")
+      path     = "/c/Users/israel_ayongwa/.ssh/id_rsa"
+      key_data = file("~/.ssh/id_rsa.pub")
     }
   }
   tags = {
